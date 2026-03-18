@@ -6,6 +6,6 @@ smoothed_load = []
 for i in range(len(load)-2):
     window = load[i:i+3]
     average = sum(window) // 3
-    smoothed_load.append(rounds(average,1))
+    smoothed_load.append(round(average,1))
 
 print(f"Сглаженный тренд: {smoothed_load}")
